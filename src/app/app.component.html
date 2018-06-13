@@ -1,0 +1,9 @@
+
+ <h1>Image cropping issue</h1>
+
+<input type="text" [(ngModel)]="url" name="url">
+<div style="max-width:400px;max-height:400px;overflow:hidden;background:grey;">
+  <img  src="{{url}}" id="my_image" class="ewapps__chatr_resize_imageratio" />
+</div>
+<br/>
+<button (click)="imagesize()">Get Cropped Image</button>
